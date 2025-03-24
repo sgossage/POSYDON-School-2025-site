@@ -1283,19 +1283,117 @@ section,
 /*--------------------------------------------------------------
 # Soc Section
 --------------------------------------------------------------*/
-.soc .team-slider {
+.soc .team-member {
+  background-color: var(--surface-color);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 30px color-mix(in srgb, var(--default-color), transparent 95%);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.soc .team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.soc .team-member:hover .member-img .social {
+  right: 0;
+}
+
+.soc .member-img {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.soc .member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.soc .member-img .social {
+  position: absolute;
+  right: -100%;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background: linear-gradient(to left, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: right 0.3s ease;
+}
+
+.soc .member-img .social a {
+  color: var(--contrast-color);
+  font-size: 1.2rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.soc .member-img .social a:hover {
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 90%);
+  transform: scale(1.1);
+}
+
+.soc .member-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.soc .member-info h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--heading-color);
+}
+
+.soc .member-info span {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.soc .member-info p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+@media (max-width: 991px) {
+  .soc .team-member {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Soc 2 Section
+--------------------------------------------------------------*/
+.soc-2 .team-slider {
   overflow: hidden;
   margin-bottom: 24px;
 }
 
-.soc .slider-nav {
+.soc-2 .slider-nav {
   display: flex;
   justify-content: center;
   gap: 12px;
 }
 
-.soc .slider-nav .swiper-button-prev,
-.soc .slider-nav .swiper-button-next {
+.soc-2 .slider-nav .swiper-button-prev,
+.soc-2 .slider-nav .swiper-button-next {
   position: static;
   width: 40px;
   height: 40px;
@@ -1306,37 +1404,37 @@ section,
   transition: 0.3s;
 }
 
-.soc .slider-nav .swiper-button-prev::after,
-.soc .slider-nav .swiper-button-next::after {
+.soc-2 .slider-nav .swiper-button-prev::after,
+.soc-2 .slider-nav .swiper-button-next::after {
   font-size: 14px;
   color: var(--default-color);
 }
 
-.soc .slider-nav .swiper-button-prev:hover,
-.soc .slider-nav .swiper-button-next:hover {
+.soc-2 .slider-nav .swiper-button-prev:hover,
+.soc-2 .slider-nav .swiper-button-next:hover {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.soc .slider-nav .swiper-button-prev:hover::after,
-.soc .slider-nav .swiper-button-next:hover::after {
+.soc-2 .slider-nav .swiper-button-prev:hover::after,
+.soc-2 .slider-nav .swiper-button-next:hover::after {
   color: var(--contrast-color);
 }
 
-.soc .member .member-img {
+.soc-2 .member .member-img {
   position: relative;
   margin-bottom: 16px;
   overflow: hidden;
   border-radius: 20px;
 }
 
-.soc .member .member-img img {
+.soc-2 .member .member-img img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
 }
 
-.soc .member .member-img .social {
+.soc-2 .member .member-img .social {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
@@ -1349,35 +1447,35 @@ section,
   transition: 0.3s;
 }
 
-.soc .member .member-img .social a {
+.soc-2 .member .member-img .social a {
   color: var(--contrast-color);
   font-size: 20px;
   transition: 0.3s;
 }
 
-.soc .member .member-img .social a:hover {
+.soc-2 .member .member-img .social a:hover {
   color: var(--accent-color);
   transform: translateY(-2px);
 }
 
-.soc .member .member-img:hover .social {
+.soc-2 .member .member-img:hover .social {
   opacity: 1;
   visibility: visible;
 }
 
-.soc .member .member-info h4 {
+.soc-2 .member .member-info h4 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 4px;
   color: var(--heading-color);
 }
 
-.soc .member .member-info span {
+.soc-2 .member .member-info span {
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.soc .swiper-wrapper {
+.soc-2 .swiper-wrapper {
   height: auto !important;
 }
 
