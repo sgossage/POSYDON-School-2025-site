@@ -1379,21 +1379,21 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Soc 2 Section
+# Teaching Assistants Section
 --------------------------------------------------------------*/
-.soc-2 .team-slider {
+.teaching-assistants .team-slider {
   overflow: hidden;
   margin-bottom: 24px;
 }
 
-.soc-2 .slider-nav {
+.teaching-assistants .slider-nav {
   display: flex;
   justify-content: center;
   gap: 12px;
 }
 
-.soc-2 .slider-nav .swiper-button-prev,
-.soc-2 .slider-nav .swiper-button-next {
+.teaching-assistants .slider-nav .swiper-button-prev,
+.teaching-assistants .slider-nav .swiper-button-next {
   position: static;
   width: 40px;
   height: 40px;
@@ -1404,37 +1404,37 @@ section,
   transition: 0.3s;
 }
 
-.soc-2 .slider-nav .swiper-button-prev::after,
-.soc-2 .slider-nav .swiper-button-next::after {
+.teaching-assistants .slider-nav .swiper-button-prev::after,
+.teaching-assistants .slider-nav .swiper-button-next::after {
   font-size: 14px;
   color: var(--default-color);
 }
 
-.soc-2 .slider-nav .swiper-button-prev:hover,
-.soc-2 .slider-nav .swiper-button-next:hover {
+.teaching-assistants .slider-nav .swiper-button-prev:hover,
+.teaching-assistants .slider-nav .swiper-button-next:hover {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.soc-2 .slider-nav .swiper-button-prev:hover::after,
-.soc-2 .slider-nav .swiper-button-next:hover::after {
+.teaching-assistants .slider-nav .swiper-button-prev:hover::after,
+.teaching-assistants .slider-nav .swiper-button-next:hover::after {
   color: var(--contrast-color);
 }
 
-.soc-2 .member .member-img {
+.teaching-assistants .member .member-img {
   position: relative;
   margin-bottom: 16px;
   overflow: hidden;
   border-radius: 20px;
 }
 
-.soc-2 .member .member-img img {
+.teaching-assistants .member .member-img img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
 }
 
-.soc-2 .member .member-img .social {
+.teaching-assistants .member .member-img .social {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
@@ -1447,35 +1447,35 @@ section,
   transition: 0.3s;
 }
 
-.soc-2 .member .member-img .social a {
+.teaching-assistants .member .member-img .social a {
   color: var(--contrast-color);
   font-size: 20px;
   transition: 0.3s;
 }
 
-.soc-2 .member .member-img .social a:hover {
+.teaching-assistants .member .member-img .social a:hover {
   color: var(--accent-color);
   transform: translateY(-2px);
 }
 
-.soc-2 .member .member-img:hover .social {
+.teaching-assistants .member .member-img:hover .social {
   opacity: 1;
   visibility: visible;
 }
 
-.soc-2 .member .member-info h4 {
+.teaching-assistants .member .member-info h4 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 4px;
   color: var(--heading-color);
 }
 
-.soc-2 .member .member-info span {
+.teaching-assistants .member .member-info span {
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.soc-2 .swiper-wrapper {
+.teaching-assistants .swiper-wrapper {
   height: auto !important;
 }
 
