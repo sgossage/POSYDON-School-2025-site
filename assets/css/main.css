@@ -1597,7 +1597,7 @@ section,
 
 .sponsors .client-logo img {
   padding: 50px;
-  max-width: 120%;
+  max-width: 100%;
   /*80%*/
   transition: 0.3s;
 }
@@ -1618,6 +1618,8 @@ section,
 --------------------------------------------------------------*/
 .contact {
   --accent-color: #9fc5e8;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .contact .info-item+.info-item {
