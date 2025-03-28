@@ -3,6 +3,8 @@
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
+  --accent-color: #9fc5e8;
+
   .info-item {
     &+.info-item {
       margin-top: 40px;

@@ -861,6 +861,8 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
+  --heading-color: #ffffff;
+  --accent-color: #9fc5e8;
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -1150,6 +1152,7 @@ section,
 # Venue Section
 --------------------------------------------------------------*/
 .venue {
+  --accent-color: #9fc5e8;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1221,6 +1224,7 @@ section,
 # Lodging Section
 --------------------------------------------------------------*/
 .lodging {
+  --accent-color: #9fc5e8;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1283,6 +1287,10 @@ section,
 /*--------------------------------------------------------------
 # Soc Section
 --------------------------------------------------------------*/
+.soc {
+  --accent-color: #9fc5e8;
+}
+
 .soc .team-member {
   background-color: var(--surface-color);
   border-radius: 15px;
@@ -1381,6 +1389,10 @@ section,
 /*--------------------------------------------------------------
 # Teaching Assistants Section
 --------------------------------------------------------------*/
+.teaching-assistants {
+  --accent-color: #9fc5e8;
+}
+
 .teaching-assistants .team-slider {
   overflow: hidden;
   margin-bottom: 24px;
@@ -1482,6 +1494,10 @@ section,
 /*--------------------------------------------------------------
 # Loc Section
 --------------------------------------------------------------*/
+.loc {
+  --accent-color: #9fc5e8;
+}
+
 .loc .team-member {
   background-color: var(--surface-color);
   overflow: hidden;
@@ -1553,6 +1569,10 @@ section,
 /*--------------------------------------------------------------
 # Sponsors Section
 --------------------------------------------------------------*/
+.sponsors {
+  --accent-color: #9fc5e8;
+}
+
 .sponsors .clients-wrap {
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
@@ -1588,6 +1608,10 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact {
+  --accent-color: #9fc5e8;
+}
+
 .contact .info-item+.info-item {
   margin-top: 40px;
 }

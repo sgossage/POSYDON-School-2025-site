@@ -3,6 +3,8 @@
 # Sponsors Section
 --------------------------------------------------------------*/
 .sponsors {
+  --accent-color: #9fc5e8;
+
   .clients-wrap {
     border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
     border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
