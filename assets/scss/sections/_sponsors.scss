@@ -4,6 +4,8 @@
 --------------------------------------------------------------*/
 .sponsors {
   --accent-color: #9fc5e8;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
 
   .clients-wrap {
     border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
@@ -21,7 +23,8 @@
 
     img {
       padding: 50px;
-      max-width: 80%;
+      max-width: 120%;
+      /*80%*/
       transition: 0.3s;
 
       @media (max-width: 640px) {
